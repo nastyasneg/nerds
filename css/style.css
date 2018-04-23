@@ -1,0 +1,313 @@
+/* ====== GLOBAL ====== */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ====== HEADER ====== */
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation {
+  margin: 0;
+  padding: 0;
+
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* ====== FEATURES ====== */
+
+.features {
+  background-color: #eeeeee;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-item h2 {
+  margin: 0;
+
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.features-item a {
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.button {
+  background-color: #fb565a;
+  border-radius: 2px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+}
+
+/* ====== SERVICES ====== */
+
+.services-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.services-item p {
+  margin: 0;
+}
+
+.services-item h3 {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-item a {
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.green-button {
+  background-color: #00ca74;
+}
+
+.green-button:hover,
+.green-button:focus {
+  background-color: #00bc6c;
+}
+
+.green-button:active {
+  background-color: #00aa62;
+}
+
+.yellow-button {
+  background-color: #efc84a;
+}
+
+.yellow-button:hover,
+.yellow-button:focus {
+  background-color: #eab534;
+}
+
+.yellow-button:active {
+  background-color: #e5a722;
+}
+
+/* ====== INFO ====== */
+
+.info h3 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.info p {
+  margin: 0;
+}
+
+.info h4 {
+  margin: 0;
+
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.info-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.info-facts {
+  margin: 0;
+}
+
+.info-facts dt {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.info-facts dd {
+  margin: 0;
+}
+
+/* ====== CLIENTS ====== */
+
+.clients-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.clients-item {
+  opacity: 0.2;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  opacity: 1;
+}
+
+.clients-item:active {
+  opacity: 0.1;
+}
+
+/* ====== FOOTER ====== */
+
+.footer-top p{
+  margin: 0;
+}
+
+.footer-contacts b {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 78px;
+  height: 78px;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social-button a:hover,
+.social-button a:focus {
+  background-color: #e74246;
+}
+
+.social-button a:active {
+  background-color: #d7373b;
+}
+
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+.footer-text p:first-child {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 500;
+}
