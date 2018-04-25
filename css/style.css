@@ -61,10 +61,34 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.main-navigation {
+  display: flex;
+}
+
+.main-header-logo {
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.site-navigation {
+  display: flex;
+  width: 600px;
+}
+
+.site-navigation li {
+  margin-right: 50px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+
 .site-navigation,
 .user-navigation {
   margin: 0;
   padding: 0;
+  padding-top: 80px;
+  padding-bottom: 30px;
 
   line-height: 30px;
   color: #000000;
@@ -90,9 +114,15 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation {
+  margin-left: auto;
+}
+
 /* ====== FEATURES ====== */
 
 .features {
+  margin-bottom: 80px;
+
   background-color: #eeeeee;
 }
 
@@ -103,8 +133,34 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.features-item {
+  width: 100%;
+  height: 415px;
+}
+
+.features-list .item1 {
+  background-image: url(../img/slide1.png);
+  background-repeat: no-repeat;
+  background-position: 470px center;
+}
+
+.features-list .item2 {
+  background-image: url(../img/slide2.png);
+  background-repeat: no-repeat;
+  background-position: 535px center;
+}
+
+.features-list .item3 {
+  background-image: url(../img/slide3.png);
+  background-repeat: no-repeat;
+  background-position: 440px center;
+}
+
 .features-item h2 {
   margin: 0;
+  margin-bottom: 25px;
+  padding-top: 60px;
+  width: 560px;
 
   font-size: 55px;
   line-height: 55px;
@@ -112,10 +168,19 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 }
 
+.features-item p {
+  margin-bottom: 43px;
+  width: 430px;
+}
+
 .features-item a {
+  padding: 18px 50px;
+
   color: #ffffff;
   text-transform: uppercase;
   line-height: 18px;
+
+  border-radius: 5px;
 }
 
 .button {
@@ -136,19 +201,42 @@ input[type="radio"].visually-hidden {
 
 /* ====== SERVICES ====== */
 
+.services {
+  margin-bottom: 150px;
+}
+
 .services-list {
+  display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.services-item {
+  position: relative;
+
+  width: 300px;
+  margin-right: 100px;
+}
+
+.services-item:last-child {
+  margin-right: 0;
+}
+
 .services-item p {
   margin: 0;
 }
 
+.services-item .services-image {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 146px;
+}
+
 .services-item h3 {
   margin: 0;
+  margin-bottom: 20px;
 
   font-size: 24px;
   line-height: 30px;
@@ -157,6 +245,12 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item a {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+
+  padding: 15px 40px;
+
   color: #ffffff;
   text-transform: uppercase;
   line-height: 18px;
@@ -265,8 +359,8 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   bottom: 0;
-  left: 20px;
-  right: 20px;
+  left: 0;
+  right: 0;
 
   height: 2px;
 
