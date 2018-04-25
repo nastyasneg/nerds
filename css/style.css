@@ -612,5 +612,63 @@ input[type="radio"].visually-hidden {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  font-weight: 500;
+  font-weight: bold;
+}
+
+/* ====== MODAL ====== */
+
+.modal h2 {
+  margin: 0;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: normal;
+}
+
+.modal-form p {
+  margin: 0;
+}
+
+.modal-form label {
+  line-height: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.modal-form input {
+  border: 2px solid #d7dcde;
+}
+
+.modal-form input:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-form input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.modal-form input:invalid {
+  color: #e74246;
+
+  border-color: #e74246;
+}
+
+.modal-form textarea {
+  border: 2px solid #d7dcde;
+}
+
+.modal-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-form textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.modal-form textarea:invalid {
+  color: #e74246;
+
+  border-color: #e74246;
 }
