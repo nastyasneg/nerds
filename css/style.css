@@ -147,12 +147,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-
   list-style: none;
   overflow: hidden;
 }
 
 .features-item {
+  position: absolute;
+
   width: 100%;
   height: 415px;
 
@@ -160,6 +161,8 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-show {
+  z-index: 1;
+
   opacity: 1;
 }
 
@@ -210,7 +213,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   background-color: #fb565a;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .button:hover,
@@ -227,7 +230,8 @@ input[type="radio"].visually-hidden {
 .slider {
   position: absolute;
   bottom: 108px;
-  right: 50%;
+  left: 635px;
+  z-index: 2;
 }
 
 .slider input {
@@ -527,6 +531,14 @@ input[type="radio"].visually-hidden {
 
 /* ====== CATALOG HEADING ====== */
 
+.catalog-heading {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 60px;
+
+  background-color: #eeeeee;
+}
+
 .catalog-heading p {
   margin: 0;
 }
@@ -539,11 +551,18 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-weight: 400;
   text-align: center;
-
-  background-color: #eeeeee;
 }
 
 /* ====== FILTER ====== */
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-form {
+  width: 260px;
+}
 
 .filter-form fieldset {
   margin: 0;
@@ -568,6 +587,56 @@ input[type="radio"].visually-hidden {
 .filter-slider input {
   border: none;
   background-color: #eeeeee;
+}
+
+.value-slider {
+  position: relative;
+
+  padding-top: 40px;
+  width: 260px;
+  height: 80px;
+  box-sizing: border-box;
+
+  background-color: #eeeeee;
+}
+
+.value-slider .line {
+  margin: auto;
+  width: 219px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.line .bar {
+  width: 152px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.value-slider-point {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+
+  background-color: #acacac;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  box-shadow: 0 3px 0 0 #cccccc;
+  cursor: pointer;
+}
+
+.slider-point-min {
+  top: 30px;
+  left: 18px;
+}
+
+.slider-point-max {
+  top: 30px;
+  left: 160px;
 }
 
 .filter-grid-list {
@@ -611,6 +680,14 @@ input[type="radio"].visually-hidden {
 
 /* ====== SORT ====== */
 
+.right-column {
+  width: 760px;
+}
+
+.sort {
+  display: flex;
+}
+
 .sort p {
   margin: 0;
 
@@ -648,6 +725,8 @@ input[type="radio"].visually-hidden {
 /* ====== CATALOG ====== */
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -682,8 +761,13 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   position: relative;
 
-  width: 361px;
+  width: 360px;
   height: 615px;
+  margin-bottom: 35px;
+}
+
+.catalog-item:nth-child(2n+1) {
+  margin-right: 40px;
 }
 
 .catalog-item>p {
@@ -753,7 +837,9 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+  display: flex;
   margin: 0;
+  margin-top: 25px;
   padding: 0;
 
   list-style: none;
@@ -862,7 +948,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   text-transform: uppercase;
 
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .footer-bottom {
