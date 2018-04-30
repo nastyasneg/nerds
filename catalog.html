@@ -37,7 +37,7 @@
           <h2 class="visually-hidden">Фильтр</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-slider">
-              <legend>Стоимость:<legend>
+              <legend>Стоимость:</legend>
               <div class="value-slider">
                 <div class="line">
                   <div class="bar"></div>
@@ -45,25 +45,40 @@
                 <div class="value-slider-point slider-point-min" tabindex="0"></div>
                 <div class="value-slider-point slider-point-max" tabindex="0"></div>
               </div>
-              <label for="min-price">От</label>
-              <input id="min-price" type="text" name="min-price" placeholder="0">
-              <label for="max-price">До</label>
-              <input id="max-price" type="text" name="max-price" placeholder="15000">
+              <div class="features-price-wrapper">
+                <div>
+                  <label for="min-price">От</label>
+                  <input class="min-price" id="min-price" type="text" name="min-price" placeholder="0">
+                </div>
+                <div>
+                  <label for="max-price">До</label>
+                  <input id="max-price" type="text" name="max-price" placeholder="15000">
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-grid">
               <legend>Сетка:</legend>
               <ul class="filter-grid-list">
                 <li class="filter-option">
-                  <input id="adaptive" type="radio" name="grid" value="adaptive">
-                  <label for="adaptive">Адаптивная</label>
+                  <label for="adaptive">
+                  <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
+                  <span class="radio-indicator"></span>
+                  <span>Адаптивная</span>
+                  </label>
                 </li>
                 <li class="filter-option">
+                  <label for="fixed">
                   <input id="fixed" type="radio" name="grid" value="fixed">
-                  <label for="fixed">Фиксированная</label>
+                  <span class="radio-indicator"></span>
+                  <span>Фиксированная</span>
+                  </label>
                 </li>
                 <li class="filter-option">
+                  <label for="rubber">
                   <input id="rubber" type="radio" name="grid" value="rubber">
-                  <label for="rubber">Резиновая</label>
+                  <span class="radio-indicator"></span>
+                  <span>Резиновая</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -71,24 +86,39 @@
               <legend>Особенности:</legend>
               <ul class="filter-features-list">
                 <li class="filter-option">
+                  <label for="slider">
                   <input id="slider" type="checkbox" name="slider" checked>
-                  <label for="slider">Слайдер</label>
+                  <span class="checkbox-indicator"></span>
+                  Слайдер
+                  </label>
                 </li>
                 <li class="filter-option">
+                  <label for="advantage">
                   <input id="advantage" type="checkbox" name="advantage">
-                  <label for="advantage">Блок преимущества</label>
+                  <span class="checkbox-indicator"></span>
+                  Блок преимущества
+                  </label>
                 </li>
                 <li class="filter-option">
+                  <label for="news">
                   <input id="news" type="checkbox" name="news" checked>
-                  <label for="news">Новости</label>
+                  <span class="checkbox-indicator"></span>
+                  Новости
+                  </label>
                 </li>
                 <li class="filter-option">
+                  <label for="gallery">
                   <input id="gallery" type="checkbox" name="gallery">
-                  <label for="gallery">Галерея</label>
+                  <span class="checkbox-indicator"></span>
+                  Галерея
+                  </label>
                 </li>
                 <li class="filter-option">
+                  <label for="basket">
                   <input id="basket" type="checkbox" name="basket">
-                  <label for="basket">Корзина</label>
+                  <span class="checkbox-indicator"></span>
+                  Корзина
+                  </label>
                 </li>
               </ul>
             </fieldset>
