@@ -154,7 +154,7 @@ input[type="radio"].visually-hidden {
 .features-item {
   position: absolute;
 
-  width: 100%;
+  width: 1160px;
   height: 415px;
 
   opacity: 0;
