@@ -566,12 +566,15 @@ input[type="radio"].visually-hidden {
 
 .filter-form fieldset {
   margin: 0;
+  padding: 0;
 
   border: none;
 }
 
 .filter-form legend {
+  margin: 0;
   margin-bottom: 20px;
+  padding: 0;
 
   font-size: 18px;
   line-height: 30px;
@@ -812,23 +815,22 @@ input[type="radio"].visually-hidden {
 
 .sort {
   display: flex;
+  width: 760px;
+  margin-bottom: 50px;
 }
 
 .sort p {
   margin: 0;
 
   font-size: 18px;
-  line-height: 18px;
+  line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
 
 .sort ul {
-  margin: 0;
-  padding: 0;
-
   font-size: 14px;
-  line-height: 18px;
+  line-height: 30px;
   text-transform: uppercase;
 
   list-style: none;
@@ -846,6 +848,44 @@ input[type="radio"].visually-hidden {
 .sort-item a:active,
 .sort-item-current a {
   color: #000000;
+}
+
+.sort-by-category {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.sort-by-category li {
+  margin-right: 25px;
+}
+
+.sort-by-category li:last-child {
+  margin-right: 0;
+}
+
+.sort-by-priority {
+  position: relative;
+
+  display: flex;
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
+}
+
+.sort-by-priority .sort-down {
+  margin-left: 15px;
+}
+
+.sort-item:hover polygon,
+.sort-item:focus polygon {
+  fill: #a6a6a6;
+}
+
+.sort-item:active polygon,
+.sort-item-current polygon {
+  fill: #000000;
 }
 
 /* ====== CATALOG ====== */
@@ -868,17 +908,21 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-browser-circles {
+  display: flex;
+
   margin: 0;
   padding: 0;
+  padding: 13px 15px;
+
+  line-height: 0;
 
   list-style: none;
 }
 
 .catalog-browser-circles li {
-  display: inline-block;
-
   width: 14px;
   height: 14px;
+  margin-right: 9px;
 
   background-color: #ffffff;
   border-radius: 50%;
@@ -916,6 +960,8 @@ input[type="radio"].visually-hidden {
 
   width: 360px;
   height: 231px;
+  padding: 30px 60px;
+  box-sizing: border-box;
 
   background-color: #eeeeee;
 }
@@ -937,9 +983,21 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-hover a {
+  display: block;
+  margin: auto;
+  padding: 17px 60px;
+  width: 200px;
+  height: 50px;
+  box-sizing: border-box;
+
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-button {
+
 }
 
 .catalog-button:active {
@@ -978,6 +1036,7 @@ input[type="radio"].visually-hidden {
 
   width: 50px;
   height: 50px;
+  margin-right: 12px;
 
   line-height: 18px;
   text-transform: uppercase;
