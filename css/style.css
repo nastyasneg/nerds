@@ -274,7 +274,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 150px;
+  padding-bottom: 160px;
 
   list-style: none;
 }
@@ -295,19 +295,23 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item .services-image {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 300px;
   height: 146px;
 }
 
 .services-item h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   font-size: 24px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.services-item .services-text {
+  width: 260px;
 }
 
 .services-item a {
@@ -357,14 +361,14 @@ input[type="radio"].visually-hidden {
 }
 
 .info .container {
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 
   border-bottom: 2px solid #eeeeee;
 }
 
 .info h3 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   width: 670px;
 
   font-size: 45px;
@@ -375,7 +379,7 @@ input[type="radio"].visually-hidden {
 
 .info p {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   width: 670px;
 }
 
@@ -386,7 +390,7 @@ input[type="radio"].visually-hidden {
 
 .info h4 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   width: 670px;
 
   color: #000000;
@@ -403,7 +407,7 @@ input[type="radio"].visually-hidden {
 .info-list li {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-left: 35px;
 }
 
@@ -432,7 +436,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: -40px;
+  top: -35px;
 
   width: 360px;
   height: 208px;
@@ -443,6 +447,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-digits h4 {
+  margin-bottom: 35px;
   width: 360px;
 
   text-align: center;
@@ -459,7 +464,7 @@ input[type="radio"].visually-hidden {
 }
 
 .info-facts dt {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   font-size: 45px;
   line-height: 60px;
@@ -1085,7 +1090,7 @@ input[type="radio"].visually-hidden {
 .footer-top {
   position: relative;
 
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .footer-top p {
@@ -1109,7 +1114,7 @@ input[type="radio"].visually-hidden {
 .footer-contacts b {
   display: block;
 
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   font-size: 18px;
   line-height: 30px;
@@ -1119,7 +1124,7 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts p:nth-child(3) {
   margin-top: 18px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .footer-contacts a {
@@ -1131,6 +1136,7 @@ input[type="radio"].visually-hidden {
 
   color: #ffffff;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
 
   border-radius: 3px;
@@ -1142,6 +1148,7 @@ input[type="radio"].visually-hidden {
 
 .footer-bottom .container {
   display: flex;
+  align-items: center;
 }
 
 .footer-social {
