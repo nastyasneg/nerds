@@ -137,7 +137,7 @@ input[type="radio"].visually-hidden {
 .features {
   position: relative;
 
-  height: 415px;
+  height: 410px;
   margin-bottom: 80px;
 
   background-color: #eeeeee;
@@ -155,7 +155,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1160px;
-  height: 415px;
+  height: 410px;
 
   opacity: 0;
 }
@@ -197,18 +197,18 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item p {
-  margin-bottom: 43px;
+  margin-bottom: 50px;
   width: 430px;
 }
 
 .features-item a {
-  padding: 18px 50px;
+  padding: 17px 54px;
 
   color: #ffffff;
   text-transform: uppercase;
   line-height: 18px;
 
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .button {
@@ -229,8 +229,8 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: absolute;
-  bottom: 108px;
-  left: 635px;
+  bottom: 95px;
+  left: 625px;
   z-index: 2;
 }
 
