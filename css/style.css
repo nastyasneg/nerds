@@ -1222,18 +1222,18 @@ input[type="radio"].visually-hidden {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   z-index: 2;
 
-  display: none;
+  /* display: none; */
   margin: auto;
   padding: 65px 100px;
   width: 960px;
   box-sizing: border-box;
 
   background-color: #ffffff;
-  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.5),
+              inset -5px -5px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .modal-show {
@@ -1242,7 +1242,7 @@ input[type="radio"].visually-hidden {
 
 .modal h2 {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
   font-size: 45px;
   line-height: 45px;
@@ -1297,7 +1297,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form textarea {
-  padding: 15px;
+  padding: 12px;
   width: 760px;
   min-height: 118px;
   box-sizing: border-box;
@@ -1321,7 +1321,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form .button {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 20px;
   padding: 15px;
   width: 260px;
@@ -1336,8 +1336,8 @@ input[type="radio"].visually-hidden {
   top: 80px;
   right: 90px;
 
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
 
   font-size: 0;
 
@@ -1352,10 +1352,10 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 2px;
 
-  width: 21px;
+  width: 25px;
   height: 3px;
 
   background-color: #fecccd;
