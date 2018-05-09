@@ -83,7 +83,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 75px;
-  padding-bottom: 30px;
 
   line-height: 30px;
   color: #000000;
@@ -137,7 +136,7 @@ input[type="radio"].visually-hidden {
 .features {
   position: relative;
 
-  height: 410px;
+  height: 425px;
   margin-bottom: 80px;
 
   background-color: #eeeeee;
@@ -155,7 +154,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1160px;
-  height: 410px;
+  height: 425px;
 
   opacity: 0;
 }
@@ -169,25 +168,25 @@ input[type="radio"].visually-hidden {
 .features-list .item1 {
   background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
-  background-position: 430px center;
+  background-position: 430px 15px;
 }
 
 .features-list .item2 {
   background-image: url(../img/slide2.png);
   background-repeat: no-repeat;
-  background-position: 535px center;
+  background-position: 500px 5px;
 }
 
 .features-list .item3 {
   background-image: url(../img/slide3.png);
   background-repeat: no-repeat;
-  background-position: 440px center;
+  background-position: 400px 15px;
 }
 
 .features-item h2 {
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 60px;
+  padding-top: 70px;
   width: 560px;
 
   font-size: 55px;
@@ -197,7 +196,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item p {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   width: 430px;
 }
 
@@ -1220,13 +1219,14 @@ input[type="radio"].visually-hidden {
 
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 50%;
   left: 0;
+  right: 0;
   z-index: 2;
 
-  /* display: none; */
+  display: none;
   margin: auto;
+  margin-top: -295px;
   padding: 65px 100px;
   width: 960px;
   box-sizing: border-box;
@@ -1336,8 +1336,8 @@ input[type="radio"].visually-hidden {
   top: 80px;
   right: 90px;
 
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
 
   font-size: 0;
 
