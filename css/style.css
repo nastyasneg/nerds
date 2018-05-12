@@ -67,6 +67,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 600px;
 }
 
@@ -136,7 +137,7 @@ input[type="radio"].visually-hidden {
 .features {
   position: relative;
 
-  height: 425px;
+  min-height: 425px;
   margin-bottom: 80px;
 
   background-color: #eeeeee;
@@ -153,12 +154,16 @@ input[type="radio"].visually-hidden {
 .features-item {
   position: absolute;
 
+  padding-top: 70px;
+  padding-bottom: 80px;
   width: 1160px;
-  height: 425px;
+  min-height: 425px;
+  box-sizing: border-box;
 
   opacity: 0;
 
   transition: opacity 0.6s;
+
 }
 
 @keyframes slowly {
@@ -198,7 +203,6 @@ input[type="radio"].visually-hidden {
 .features-item h2 {
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 70px;
   width: 560px;
 
   font-size: 55px;
@@ -285,9 +289,9 @@ input[type="radio"].visually-hidden {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-bottom: 160px;
 
   list-style: none;
 }
@@ -299,7 +303,7 @@ input[type="radio"].visually-hidden {
   margin-right: 100px;
 }
 
-.services-item:last-child {
+.services-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -325,14 +329,15 @@ input[type="radio"].visually-hidden {
 
 .services-item .services-text {
   width: 260px;
+  margin-bottom: 35px;
 }
 
 .services-item a {
-  position: absolute;
-  left: 0;
-  bottom: -80px;
-
+  display: block;
   padding: 15px 40px;
+  margin-bottom: 90px;
+  width: 160px;
+  box-sizing: border-box;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -499,6 +504,7 @@ input[type="radio"].visually-hidden {
 .clients-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -562,7 +568,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-heading h1 {
-  margin: 0;
+  margin: 0 auto;
+  width: 840px;
 
   font-size: 55px;
   line-height: 55px;
@@ -1015,9 +1022,13 @@ input[type="radio"].visually-hidden {
 .catalog-item-hover p {
   margin: 0;
   margin-bottom: 27px;
+  width: 240px;
+  height: 35px;
+
   line-height: 18px;
   color: #666666;
   text-align: center;
+  overflow: hidden;
 }
 
 .catalog-item-hover a {
@@ -1056,6 +1067,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 25px;
   padding: 0;
@@ -1159,6 +1171,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .footer-contacts b {
@@ -1203,6 +1216,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   margin-right: 40px;
@@ -1214,6 +1228,7 @@ input[type="radio"].visually-hidden {
 
 .social-button {
   margin-right: 13px;
+  padding-bottom: 5px;
 }
 
 .social-button a {
@@ -1243,6 +1258,7 @@ input[type="radio"].visually-hidden {
 
 .footer-text p {
   margin: 0;
+  width: 760px;
 }
 
 .footer-text p:first-child {
