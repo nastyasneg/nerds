@@ -217,10 +217,14 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item a {
-  padding: 17px 54px;
+  display: block;
+  width: 240px;
+  padding: 17px 30px;
+  box-sizing: border-box;
 
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
   line-height: 18px;
 
   border-radius: 3px;
@@ -334,14 +338,17 @@ input[type="radio"].visually-hidden {
 
 .services-item a {
   display: block;
-  padding: 15px 40px;
+  padding: 15px 30px;
   margin-bottom: 90px;
   width: 160px;
   box-sizing: border-box;
 
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
   line-height: 18px;
+
+  word-break: break-all;
 }
 
 .green-button {
@@ -831,6 +838,7 @@ input[type="radio"].visually-hidden {
 
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
 
   background-color: #eeeeee;
@@ -1193,7 +1201,7 @@ input[type="radio"].visually-hidden {
 .footer-contacts a {
   display: block;
 
-  padding: 15px 40px;
+  padding: 15px 30px;
   width: 100%;
   box-sizing: border-box;
 
