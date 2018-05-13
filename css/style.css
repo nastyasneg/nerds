@@ -1244,9 +1244,14 @@ input[type="radio"].visually-hidden {
   border: 0;
 }
 
-.footer-image {
+.footer-top .footer-image {
   position: absolute;
   top: 0;
+
+  width: 100%;
+  margin: 0;
+
+  overflow: hidden;
 }
 
 .footer-top p {
